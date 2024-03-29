@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "workBench";
+  src: local("workBench"), url(./fonts/Workbench-Regular.ttf) format("truetype");
+}
+
+body {
+  background-color: #eae2b7;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: "workBench";
+  font-size: 50px;
+  color: #f77f00;
+}
+
+.container {
+  width: 95%;
+  border: 3px solid #003049;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+.book-list {
+  float: left;
+  height: 100%;
+  overflow: auto;
+  width: calc(95vw - 640px);
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.side-menu {
+  height: 100%;
+  width: 600px;
+  /* border: 1px solid black; */
+  float: right;
+}
+
+.book-item {
+  height: 380px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: #003049;
+  margin: 10px;
+  color: white;
+  font-family: "Merriweather";
+  cursor: pointer;
+}
+
+.book-item .img-box {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.img-box img {
+  overflow: hidden;
+  width: 300px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.book-item .title {
+  font-size: 1.2em;
+  float: left;
+  padding: 0px 5px;
+  width: 190px;
+}
+
+.book-item .rating {
+  float: right;
+  font-size: 1.2em;
+  padding: 5px 8px 8px 0px;
+  color: #f77f00;
+  font-weight: bold;
+}
+
+.book-item .book-desc {
+  padding: 0px 5px;
+  clear: both;
+  height: 90px;
+  overflow: hidden;
+  white-space: no-wrap;
+  text-overflow: ellipsis;
+}
+
+.add-new-book {
+  padding: 10px;
+}
+
+.add-new-book .head-line {
+  text-align: center;
+}
+
+.book-form input {
+  height: 35px;
+  width: 400px;
+}
+
+.book-form .rating {
+  width: 50px;
+}
+
+.book-form textarea {
+  width: 500px;
+  height: 200px;
+}
+
+.book-form button {
+  height: 40px;
+  width: 120px;
+  font-size: 20px;
+  border: none;
+  background-color: #f77f00;
+}
+
+.add-new-book .close {
+  background-color: #003049;
+  color: white;
+  height: 40px;
+  width: 120px;
+}
+
+.add-new-book .delete {
+  background-color: #d62828;
+  height: 40px;
+  width: 120px;
+}
